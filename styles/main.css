@@ -1,22 +1,22 @@
 
-dy { background-color: blue; }
-	h2{ color: yellow; }
-		#title{
-				font-family: Tahoma, Geneva, sans-serif;
-						font-size: 36px;
-								color: red;
-									}
-										#name{ 
-												color: yellow;
-													}
-														#text-input{
-																border-radius: 5px;
-																		width: 300px;
-																			}
-																				.submit-btn{
-																						width: 180px;
-																								height: 50px;
-																										border: 2px dashed white;
-																				color: red;
-																														border-radius: 10px				
-																														}
+body { background-color: blue; }
+h2{ color: yellow; }
+#title{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 36px;
+	color: red;
+}
+#name{ 
+	color: yellow;
+}
+#text-input{
+	border-radius: 5px;
+	width: 300px;
+}
+.submit-btn{																		
+	width: 180px;	
+	height: 50px;		
+	border: 2px dashed white;															
+	color: red;										
+	border-radius: 10px;																
+}
