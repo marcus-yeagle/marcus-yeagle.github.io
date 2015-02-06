@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Homework 5!!!</title>
-<link rel="stylesheet" type="text/css" href="../styles/main.css">
-<script type="text/javascript">
-  function getChart(symbol){
-      var elem = document.getElementById("symbol");
-      var ticker = elem.value;
-      var url1 = "http://bigcharts.marketwatch.com/advchart/frames/frames.asp?show=&insttype=Stock&symb=";
-      var url2 = "&x=0&y=0&time=7&startdate=1%2F4%2F1999&enddate=7%2F15%2F2014&freq=1&compidx=SP500&comptemptext=&comp=none&ma=2&maval=50&uf=0&lf=1&lf2=0&lf3=0&type=4&style=340&size=1&timeFrameToggle=false&compareToToggle=false&indicatorsToggle=false&chartStyleToggle=false&state=15";
-      var res = url1.concat(ticker);
-      var url3 = res.concat(url2);	
-      window.open(url3, '_blank');
-}
-</script>
+      <meta charset="utf-8">
+	<title>Marcus Yeagle</title>
+      <meta name="viewport" content="width=device-width, inital-scale=1.0">
+      <meta description="A git-hosted homepage for myself.">
+      <meta author="Marcus Yeagle">
+
+      <link href="../assets/css/bootstrap.css" rel="stylesheet">
+      <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <style>
+      body {
+        padding-top: 60px; 
+        /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
 </head>
 
 <body>
-	<div id="title">MARCUS YEAGLE --- my697011</div>
-	<div id="title">GET A FREE STOCK CHART</div>
-	<div id="chartForm">
-      		<input id="symbol" type="text"></input>
-            	<input id="submit-btn" type="submit" value="get chart" onclick="getChart(symbol);"></input>
-	</div>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+              <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">Marcus Yeagle Homepage</a>
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Hey there!</h1>
+      <p>This is my personal homepage hosted on my github.io. Some of you might not know what that means, but that is okay! I plan on using this space to write, experiment, and challenge myself to make cooler web stuff.</p>
+      <p>This site uses bootstrap from Twiter, as I want to make better looking, responsive sites. So hopefully when you come back things look a lot better!</p>
+
+    </div> <!-- /container -->
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
 </body>
 </html>
