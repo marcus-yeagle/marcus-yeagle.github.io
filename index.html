@@ -55,7 +55,18 @@
     	border: solid white 2px;
     }
     </style>
-    <script type="text/javascript">alert("swipe left or right to change, and up to subbit.");</script>
+    <script type="text/javascript">alert("swipe left or right to change, and up to subbitt.");</script>
+    <script type="text/javascript">
+    	if ($(window).width() < 400) {
+    		$('.swiper-button-next').css({display: none;});
+    		$('.swiper-button-prev').css({display: none;});
+    	}
+    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 			alert("litte window");
+    		$('.swiper-button-next').css({display: none;});
+    		$('.swiper-button-prev').css({display: none;});
+		}
+    </script>
 </head>
 <body>
     <!-- Swiper -->
@@ -80,12 +91,6 @@
     <!-- Swiper JS -->
     <script src="/bower_components/swiper/dist/js/swiper.min.js"></script>
 
-    <script type="text/javascript">
-    	if ($(window).width() < 400) {
-    		$('.swiper-button-next').css('display', 'none');
-    		$('.swiper-button-prev').css('display', 'none');
-    	}
-    </script>
 
     <!-- Initialize Swiper -->
     <script>
