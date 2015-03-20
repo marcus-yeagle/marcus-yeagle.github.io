@@ -46,29 +46,36 @@
         -webkit-align-items: center;
         align-items: center;
     }
+    #subBtn {
+    	width: 130px;
+    	padding: 20px;
+    	color: white;
+    	background-color: #CD4F39;
+    	border-radius: 7px;
+    	border: solid white 2px;
+    }
     </style>
+    <script type="text/javascript">alert("swipe left or right to change, and up to subbit.");</script>
 </head>
 <body>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/1.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/2.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/3.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/4.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/5.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/6.jpg"></div>
+            <div class="swiper-slide"><img style="width: 100%; height: 99%;"src="/images/7.jpg"></div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    <center><div id="subBtn">subbitt!</div></center>
 
     <!-- Swiper JS -->
     <script src="/bower_components/swiper/dist/js/swiper.min.js"></script>
