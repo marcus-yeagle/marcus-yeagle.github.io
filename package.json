@@ -1,0 +1,19 @@
+{
+  "name": "marcus-yeagle.github.io",
+  "version": "1.0.0",
+  "description": "This is just a sandbox im using to sharpen the swipe thing for subbitt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcus-yeagle/marcus-yeagle.github.io.git"
+  },
+  "author": "Marcus Yeagle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcus-yeagle/marcus-yeagle.github.io/issues"
+  },
+  "homepage": "https://github.com/marcus-yeagle/marcus-yeagle.github.io"
+}
