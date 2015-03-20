@@ -80,6 +80,13 @@
     <!-- Swiper JS -->
     <script src="/bower_components/swiper/dist/js/swiper.min.js"></script>
 
+    <script type="text/javascript">
+    	if ($(window).width() < 400) {
+    		$('.swiper-button-next').css('display', 'none');
+    		$('.swiper-button-prev').css('display', 'none');
+    	}
+    </script>
+
     <!-- Initialize Swiper -->
     <script>
     var swiper = new Swiper('.swiper-container', {
