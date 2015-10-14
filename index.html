@@ -13,20 +13,31 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					
+					<h1 class="logo-font-sm">subblr</h1>
 				</header>
 
 			<!-- Banner -->
 				<section id="banner">
-					<h1 class="logo-font">subblr</h1>
-					<h3>simple subleasing</h3>
-					<p>connecting students with subleasing opportunites across campus</p>
-					<ul class="actions">
-						<li><a href="#" class="button special">Sign Up</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
-					</ul>
+					<div id="banner-container">
+						<h1 id="mobile-logo" class="logo-font">subblr</h1>
+						<h3>simple subleasing</h3>
+						<p>connecting students with subleasing opportunites across campus</p>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button special">Sign Up</a></li>
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+						<form>
+							<div class="row uniform 50%">
+								<div class="8u 12u(mobilep)" id="email-cont">
+									<input type="email" name="email" id="email" placeholder="Email Address" />
+								</div>
+								<div class="4u 12u(mobilep)" id="email-btn-cont">
+									<input id="email-btn" type="submit" value="Sign Up" class="fit" />
+								</div>
+							</div>
+						</form>
+					</div>
 				</section>
-
 			<!-- Main -->
 				<section id="main" class="container">
 
@@ -69,25 +80,6 @@
 
 				</section>
 
-			<!-- CTA -->
-				<section id="cta">
-
-					<h2>Sign up for beta access</h2>
-					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
-
-					<form>
-						<div class="row uniform 50%">
-							<div class="8u 12u(mobilep)">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
-							</div>
-							<div class="4u 12u(mobilep)">
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-						</div>
-					</form>
-
-				</section>
-
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
@@ -115,4 +107,22 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			if ($(window).width() <= 480){
+				// alert('on mobile');
+				$('#email').css("width", "100%");
+				$('#email-btn').css("width", "100%");
+				$('#email-cont').css("padding-left", "1em");
+				$('#email-cont').css("width", "100%");
+				$('#email-btn-cont').css("float", "right");
+				$('#email-btn-cont').css("width", "100%");
+			} else {
+				$('#mobile-logo').css("display", "none");
+				$('#banner').css("padding-top", "11em");
+			}
+		});
+		
+	</script>
 </html>

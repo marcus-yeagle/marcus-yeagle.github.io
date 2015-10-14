@@ -2035,8 +2035,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e89980;
-			box-shadow: 0 0 0 2px #e89980;
+			border-color: #38ad78;
+			box-shadow: 0 0 0 2px #38ad78;
 		}
 
 	.select-wrapper {
@@ -2798,8 +2798,8 @@
 	}
 
 	#header {
-		background: #444;
-		color: #bbb;
+		background: #38ad78;
+		color: #fff;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3030,7 +3030,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/street.gif");
+		background-image: url("images/overlay.png"), url("../../images/sunset-skyline.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3063,8 +3063,8 @@
 		#banner input[type="reset"],
 		#banner input[type="button"],
 		#banner .button {
-			background-color: transparent;
-			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+			background-color: #38ad78;
+			box-shadow: inset 0 0 0 2px rgba(56, 173, 120, 0.88);
 			color: #fff;
 			min-width: 12em;
 		}
@@ -3073,14 +3073,14 @@
 			#banner input[type="reset"]:hover,
 			#banner input[type="button"]:hover,
 			#banner .button:hover {
-				background-color: rgba(255, 255, 255, 0.1);
+				background-color: rgba(56, 173, 120, 0.60);
 			}
 
 			#banner input[type="submit"]:active,
 			#banner input[type="reset"]:active,
 			#banner input[type="button"]:active,
 			#banner .button:active {
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: rgba(56, 173, 120, 0.2);
 			}
 
 			#banner input[type="submit"].special,
@@ -3123,7 +3123,8 @@
 /* Footer */
 
 	#footer {
-		background: #f0f0f0;
+		background: #38ad78;
+		color: #fff;
 		padding: 4em 0 6em 0;
 		text-align: center;
 	}
@@ -3141,7 +3142,7 @@
 			}
 
 		#footer .copyright {
-			color: #999;
+			color: #fff;
 			font-size: 0.9em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
@@ -3514,6 +3515,15 @@
 
 	@media screen and (max-width: 480px) {
 
+		/* custom - mobile */
+		#email{
+			width: 100%;	
+		}
+
+		#email-btn{
+			width: 100%;
+		}
+
 		/* Basic */
 
 			html, body {
@@ -3601,7 +3611,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 5em 1em 4em 1em;
+				padding: 1em 1em 4em 1em;
 			}
 
 		/* Main */
@@ -3623,15 +3633,38 @@
 .logo-font{
 	color: #ffffff;
 	font-family: 'Slabo 27px', serif !important;
-	letter-spacing: -0.5px;
+	letter-spacing: -2.8px;
 	font-size: 57px;
 	padding-top: 10px;
 }
 
+.logo-font-sm{
+	color: #ffffff;
+	font-family: 'Slabo 27px', serif !important;
+	letter-spacing: -1px;
+	font-size: 27px;
+	padding-top: 10px;
+}
 
+#email{
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #777777;
+	width: 100%;
+	margin-right: 2px;
+}
 
+#email-btn{
+	width: 50%;
+}
 
+#email-btn-cont{
+	width: 30%;
+}
 
+#email-cont{
+	padding-left: 10em;
+	width: 70%;
+}
 
 
 
