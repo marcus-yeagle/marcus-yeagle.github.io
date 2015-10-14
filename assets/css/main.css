@@ -3035,7 +3035,7 @@
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		color: #fff;
-		padding: 12em 0 20em 0;
+		padding: 5em 0 26em 0;
 		text-align: center;
 	}
 
@@ -3662,12 +3662,9 @@
 }
 
 #email-cont{
-	padding-left: 10em;
+	padding-left: 12em;
 	width: 70%;
 }
-
-
-
 
 
 

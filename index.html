@@ -4,6 +4,7 @@
 		<title>subblr | simple subleasing</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic"/>
 		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
@@ -13,7 +14,7 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 class="logo-font-sm">subblr</h1>
+					<div id="menu-container"><h1 class="logo-font-sm">subblr</h1></div>
 				</header>
 
 			<!-- Banner -->
@@ -45,7 +46,10 @@
 						<header class="major">
 							<h2>Introducing the ultimate way to
 							<br />
-							sublease your place for the summer</h2>
+							sublease your place for the summer
+							<br />
+							coming January 2016
+							</h2>
 							<p>Finding awesome people and facilitating intial connections with temporary roomates is what we do.</p>
 						</header>
 						<span class="image featured"><img src="images/lights.gif" alt="" /></span>
@@ -56,10 +60,10 @@
 							<section>
 								<span class="icon major fa-lock accent5"></span>
 								<h3>security</h3>
-								<p>Security and privacy a real concern in today's online world. We take extra care in ensuring encryption of communicaiton and transacitons. SSL is a must.</p>
+								<p>Security and privacy are real concerns in today's online world. We take extra care in ensuring encryption of communicaiton and transacitons. SSL is a must.</p>
 							</section>
 							<section>
-								<span class="icon major fa-comments-o accent4"></span>
+								<span class="icon major fa-credit-card accent4"></span>
 								<h3>payment</h3>
 								<p>We are partnering with <a href="https://venmo.com/">Venmo</a>, one of the fastest growing mobile payment platforms on the planet. We make payments a breeze, no more handling dirty money or going to the bank to get a paper check (it's 2015).</p>
 							</section>
@@ -116,11 +120,13 @@
 				$('#email-btn').css("width", "100%");
 				$('#email-cont').css("padding-left", "1em");
 				$('#email-cont').css("width", "100%");
+				$('#email-cont').css("float", "left");
 				$('#email-btn-cont').css("float", "right");
 				$('#email-btn-cont').css("width", "100%");
 			} else {
 				$('#mobile-logo').css("display", "none");
-				$('#banner').css("padding-top", "11em");
+				$('#banner').css("padding-top", "5em");
+				$('#banner').css("padding-bottom", "26em");
 			}
 		});
 		
