@@ -3246,7 +3246,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 10em 0 18em 0;
+				padding: 6em 0 18em 0;
 			}
 
 	}
@@ -3617,3 +3617,42 @@
 			}
 
 	}
+
+
+/* custom */
+.logo-font{
+	color: #ffffff;
+	font-family: 'Slabo 27px', serif !important;
+	letter-spacing: -0.5px;
+	font-size: 57px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
