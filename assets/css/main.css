@@ -46,16 +46,36 @@
 
 #cbox-container{
 	float: right;
-	margin-right: 4em;
+	margin-right: 5em;
 }
 
 .cbox{
-	display: inline-block;
+	display: inline;
 	margin-right: 0.75em;
+	width: 100%;
+	margin-right: 6em;
 }
 
 #mobile-logo{
 	display: none;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:1px solid #fff;
+}
+input[type='checkbox']:checked {
+    background: #38ad78;
+}
+
+.checkbox-label{
+	display: inline-block;
+	position: fixed;
+	font-size: 16px;
 }
 
 /* Reset */
@@ -2134,11 +2154,11 @@
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
+/*	input[type="checkbox"],
 	input[type="radio"] {
 		width: 1em;
 		z-index: -1;
-	}
+	}*/
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
