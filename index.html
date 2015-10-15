@@ -19,26 +19,28 @@
 
 			<!-- Banner -->
 				<section id="banner">
-					<div id="banner-container">
-						<h1 id="mobile-logo" class="logo-font">subblr</h1>
-						<h3>simple subleasing</h3>
-						<p>connecting students with subleasing opportunites across campus</p>
-						<!-- <ul class="actions">
-							<li><a href="#" class="button special">Sign Up</a></li>
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul> -->
-						<form>
-							<div class="row uniform 50%">
-								<div class="8u 12u(mobilep)" id="email-cont">
-									<input type="email" name="email" id="email" placeholder="Email Address" />
-								</div>
-								<div class="4u 12u(mobilep)" id="email-btn-cont">
-									<input id="email-btn" type="submit" value="Sign Up" class="fit" />
-								</div>
+					<h1 id="mobile-logo" class="logo-font">subblr</h1>
+					<h3>simple subleasing</h3>
+					<p>connecting students with subleasing opportunites across campus</p>
+					<form>
+						<div class="row uniform 50%">
+							<div class="8u 12u(mobilep)" id="email-cont">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
 							</div>
-						</form>
-					</div>
+							<div class="4u 12u(mobilep)" id="email-btn-cont">
+								<input id="email-btn" type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+
+						<div class="row uniform 50%">
+							<div id="cbox-container" class="8u 12u(mobilep)">
+								<div class="cbox"><input type="checkbox" name="your-group" value="unit-in-group" />want to list</div>
+								<div class="cbox"><input type="checkbox" name="your-group" value="unit-in-group" />need a place</div>
+							</div>
+						</div>
+					</form>
 				</section>
+
 			<!-- Main -->
 				<section id="main" class="container">
 
@@ -90,9 +92,6 @@
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; subblr All rights reserved.</li>
@@ -114,20 +113,21 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			if ($(window).width() <= 480){
-				// alert('on mobile');
-				$('#email').css("width", "100%");
-				$('#email-btn').css("width", "100%");
-				$('#email-cont').css("padding-left", "1em");
-				$('#email-cont').css("width", "100%");
-				$('#email-cont').css("float", "left");
-				$('#email-btn-cont').css("float", "right");
-				$('#email-btn-cont').css("width", "100%");
-			} else {
-				$('#mobile-logo').css("display", "none");
-				$('#banner').css("padding-top", "5em");
-				$('#banner').css("padding-bottom", "26em");
-			}
+			// if ($(window).width() <= 480){
+			// 	// alert('on mobile');
+			// 	$('#email').css("width", "100%");
+			// 	$('#email-btn').css("width", "100%");
+			// 	$('#email-cont').css("padding-left", "1em");
+			// 	$('#email-cont').css("width", "100%");
+			// 	$('#email-cont').css("float", "left");
+			// 	$('#email-btn-cont').css("float", "right");
+			// 	$('#email-btn-cont').css("width", "100%");
+			// 	$('#mobile-logo').css("margin-bottom", "0");
+			// } else {
+			// 	$('#mobile-logo').css("display", "none");
+			// 	$('#banner').css("padding-top", "5em");
+			// 	$('#banner').css("padding-bottom", "26em");
+			// }
 		});
 		
 	</script>

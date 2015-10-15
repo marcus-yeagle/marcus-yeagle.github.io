@@ -7,6 +7,57 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* custom */
+.logo-font{
+	color: #ffffff;
+	font-family: 'Slabo 27px', serif !important;
+	letter-spacing: -2.8px;
+	font-size: 57px;
+	padding-top: 10px;
+}
+
+.logo-font-sm{
+	color: #ffffff;
+	font-family: 'Slabo 27px', serif !important;
+	letter-spacing: -1px;
+	font-size: 27px;
+	padding-top: 10px;
+}
+
+#email{
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #777777;
+	width: 100%;
+	margin-right: 2px;
+}
+
+#email-btn{
+	width: 50%;
+}
+
+#email-btn-cont{
+	width: 30%;
+}
+
+#email-cont{
+	padding-left: 12em;
+	width: 70%;
+}
+
+#cbox-container{
+	float: right;
+	margin-right: 4em;
+}
+
+.cbox{
+	display: inline-block;
+	margin-right: 0.5em;
+}
+
+#mobile-logo{
+	display: none;
+}
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2085,14 +2136,6 @@
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
 		width: 1em;
 		z-index: -1;
 	}
@@ -3247,7 +3290,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 6em 0 18em 0;
+				padding: 5em 0 26em 0;
 			}
 
 	}
@@ -3520,9 +3563,30 @@
 			width: 100%;	
 		}
 
+		#email-btn-cont{
+			float: right;
+			width: 100%;
+		}
+
 		#email-btn{
 			width: 100%;
 		}
+
+		#cbox-container{
+			margin-right: 0;
+		}
+
+		#email-cont{
+			padding-left: 1em;
+			width: 100%;
+			float: left;
+		}
+
+		#mobile-logo{
+			display: block;
+			margin-bottom: 0;
+		}
+
 
 		/* Basic */
 
@@ -3627,62 +3691,6 @@
 			}
 
 	}
-
-
-/* custom */
-.logo-font{
-	color: #ffffff;
-	font-family: 'Slabo 27px', serif !important;
-	letter-spacing: -2.8px;
-	font-size: 57px;
-	padding-top: 10px;
-}
-
-.logo-font-sm{
-	color: #ffffff;
-	font-family: 'Slabo 27px', serif !important;
-	letter-spacing: -1px;
-	font-size: 27px;
-	padding-top: 10px;
-}
-
-#email{
-	background-color: rgba(255, 255, 255, 0.9);
-	color: #777777;
-	width: 100%;
-	margin-right: 2px;
-}
-
-#email-btn{
-	width: 50%;
-}
-
-#email-btn-cont{
-	width: 30%;
-}
-
-#email-cont{
-	padding-left: 12em;
-	width: 70%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
