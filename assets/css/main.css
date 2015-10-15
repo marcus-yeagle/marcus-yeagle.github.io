@@ -76,6 +76,7 @@ input[type='checkbox']:checked {
 	display: inline-block;
 	position: fixed;
 	font-size: 16px;
+	margin-left: 5px;
 }
 
 /* Reset */
