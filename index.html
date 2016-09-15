@@ -1,138 +1,182 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>marcus yeagle | ohio university
-		</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body id="top">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Wellness - Nutrition Tracking</title>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-				<h1><strong>Hello,</strong> my name is Marcus Yeagle and I enjoy programming, astrophotography and music.</h1>
-			</header>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://use.fontawesome.com/d53b0f3e2d.js"></script>
 
-		<!-- Main -->
-			<div id="main">
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Wellness Diary</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Signup</a></li> -->
+      </ul>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h3>"We choose to go to the moon and do the other things, not because they are easy but because they are hard."- JFK</h3>
-						</header>
-						<p>I am a senior at Ohio University studying Computer Science and Mathematics. I love to solve problems with computers and technology. I have been a web developer for nearly five years and have loved every minute of it. I primarily have experience in Python building web apps using Django and Flask. In my spare time I enjoy pretending that I know how to take photos of the moon through my Astro-Binoculars and hanging out at JackieO's. My dream is to own my own technology business and upgrade to a proper telescope for imaging the sky. If you care to look at some code I have hosted on GitHub, click below. </p>
-						<ul class="actions">
-							<li><a href="https://github.com/marcus-yeagle" class="button">GitHub</a></li>
-						</ul>
-					</section>
+      <ul id="nav-mobile" class="side-nav">
+        <!-- <li><a href="#">Signup</a></li> -->
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>No Bino, just iPhone</h3>
-								<p>A nice spring evening sky above Bently Hall</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Crater Dome</h3>
-								<p>A nice shot of our very first satellite</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Lens and Tree</h3>
-								<p>This gem was taken trying to get setup</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Half</h3>
-								<p>A grainy shot of the one and only</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Edge Detail</h3>
-								<p>Very happy how this turned out</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Washed out Luna</h3>
-								<p>This is an older image from when I was less skilled</p>
-							</article>
-						</div>
-					</section>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row center" id="banner-txt">
+          <h5 class="header col s12 blk-txt">The smartest easiest way to track nutrition infomation</h5>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="row center">
+              <a class="btn-large fw waves-effect waves-light teal lighten-1 modal-trigger" id="download-button" href="#user-reg-modal"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Patient</a>
+            </div>
+          </div>
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Questions?</h2>
-						<p>Inquire here about any questions or if you just want to say hi :)</p>
-						<div class="row">
-							<div class="8u 12u$(small)">
-								<form method="post" action="#">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="4u$ 12u$(small)">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										30 Station St.<br />
-										Athens Ohio, 45701<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										330-401-3867
-									</li>
-									<li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="mailto:marcus.yeagle@gmail.com">marcus.yeagle@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+          <div class="col s12 m6">
+            <div class="row center">
+              <a href="user_dashboard.html" id="download-button" class="btn-large fw waves-effect waves-light teal lighten-1"><i class="fa fa-user-md" aria-hidden="true"></i>&nbsp;&nbsp;
+Professional</a>
+            </div>
+          </div>
+        </div>
+        <br><br>
 
-			</div>
+      </div>
+    </div>
+    <div class="parallax"><img src="media/nutrition.jpg" alt="Unsplashed background img 1"></div>
+  </div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/why_Eagle" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.facebook.com/marcus.yeagle" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="https://github.com/marcus-yeagle" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="mailto:marcus.yeagle@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Marcus Yeagle</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+  <div class="container">
+    <div class="section">
 
-	</body>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Quick Access</h5>
+
+            <p class="light">Enter your nutrition infomation with a tap of a camera. Wellness creates a simpilfied platform to track update and edit daily nutrition for patients and professionals.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Highly Collaborative</h5>
+
+            <p class="light">Wellness connects patients and professionals to provide the most comprehensive access of nutritional information from any device anywhere.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easily Customizable</h5>
+
+            <p class="light">Tailor the platform to your specific goals and objectives and recieve constructive feedback from your nutritionist or other health professional.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Team Legion
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+
+  <!-- Modal Structure -->
+  <div id="user-reg-modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+  
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn">Sign Up</a>
+    </div>
+  </div>
 </html>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+</script>
