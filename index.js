@@ -6,6 +6,7 @@ var app = new Vue({
 })
 
 Vue.component('dice', {
+  name: 'dice',
   data: function() {
     return {
       d1: 0,
@@ -18,6 +19,14 @@ Vue.component('dice', {
       this.d1 = Math.floor(1 + Math.random() * 6)
       this.d2 = Math.floor(1 + Math.random() * 6)
       this.rollVal = this.d1 + this.d2sda
+
+      if (this.d1 === this.d2) {
+        alert(`Hard ${this.d1 + this.d2}!!!`)
+      }
+
+      if (this.d1 + this.d2 === 11) {
+        alert('Yo!')
+      }
     }
   },
   template:
