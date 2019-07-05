@@ -20,8 +20,12 @@ Vue.component('dice', {
       this.d2 = Math.floor(1 + Math.random() * 6)
       this.rollVal = this.d1 + this.d2sda
 
-      if (this.d1 === this.d2) {
+      if (this.d1 === this.d2 && this.d1 + this.d2 !== 2) {
         alert(`Hard ${this.d1 + this.d2}!!!`)
+      }
+
+      if (this.d1 + this.d2 === 2) {
+        alert('Snake Eyes!')
       }
 
       if (this.d1 + this.d2 === 11) {
