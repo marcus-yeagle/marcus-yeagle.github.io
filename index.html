@@ -18,7 +18,7 @@
           fill-opacity: 1;
           stroke:#000;
           stroke-opacity: 1;
-          stroke-width:0.5;
+          stroke-width:1.25;
         }
         .active {
           fill: aquamarine;
@@ -83,9 +83,12 @@
 </html>
 
 <script>
-var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-var SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
-var SpeechRecognitionEvent = window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
+const SpeechRecognition =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
+const SpeechGrammarList =
+  window.SpeechGrammarList || window.webkitSpeechGrammarList;
+const SpeechRecognitionEvent =
+  window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
 const states = document.getElementsByClassName('land');
 const stateNames = [];
