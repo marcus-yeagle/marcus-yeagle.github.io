@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 
 const UlamSpiral = () => {
-  const [spiralType, setSpiralType] = useState('Twin Prime');
+  const [spiralType, setSpiralType] = useState('Prime');
+  const [divByVal, setDivByVal] = useState(3);
   const [spiral, setSpiral] = useState([[]]);
 
   useEffect(() => {
+    const f = 8;
     const wh = [
-      Math.floor(window.innerWidth / 25),
-      Math.floor(window.innerHeight / 25),
+      Math.floor(window.innerWidth / f),
+      Math.floor(window.innerHeight / f),
     ];
     setSpiral(generateUlamSpiral(wh[0] > wh[1] ? wh[1] : wh[0]));
 
     window.addEventListener('resize', () => {
       const newWindowSize = [
-        Math.floor(window.innerWidth / 25),
-        Math.floor(window.innerHeight / 25),
+        Math.floor(window.innerWidth / f),
+        Math.floor(window.innerHeight / f),
       ];
       setSpiral(
         generateUlamSpiral(
@@ -91,6 +93,14 @@ const UlamSpiral = () => {
     if (spiralType === 'Odd') {
       return val % 2 !== 0;
     }
+
+    if (spiralType === 'Div By') {
+      return val % divByVal === 0;
+    }
+
+    if (spiralType === 'Off') {
+      return false;
+    }
   };
 
   return (
@@ -102,17 +112,15 @@ const UlamSpiral = () => {
               <div
                 key={v}
                 style={{
-                  border: '2px solid #000',
-                  height: 20,
-                  width: 20,
+                  border: '1px dashed #D3D3D3',
+                  height: 5,
+                  width: 5,
                   textAlign: 'center',
                   fontSize: '11px',
-                  backgroundColor: dispatchSpiralType(v) ? 'blue' : 'white',
+                  backgroundColor: dispatchSpiralType(v) ? 'blue' : '#f8f5d7',
                   color: dispatchSpiralType(v) ? 'white' : 'black',
                 }}
-              >
-                {v}
-              </div>
+              ></div>
             ))}
           </div>
         ))}
@@ -120,16 +128,32 @@ const UlamSpiral = () => {
 
       <div>
         <select
-          defaultValue={'Twin Prime'}
+          defaultValue={'Prime'}
           onChange={(e) => {
             setSpiralType(e.target.value);
+          }}
+        >
+          <option>Off</option>
+          <option>Even</option>
+          <option>Odd</option>
+          <option>Div By</option>
+          <option>Prime</option>
+          <option>Twin Prime</option>
+        </select>
+      </div>
+      <div style={{ display: spiralType !== 'Div By' ? 'none' : 'block' }}>
+        <select
+          defaultValue={3}
+          onChange={(e) => {
+            setDivByVal(e.target.value);
             console.log(e.target.value);
           }}
         >
-          <option>Even</option>
-          <option>Odd</option>
-          <option>Prime</option>
-          <option>Twin Prime</option>
+          <option>3</option>
+          <option>7</option>
+          <option>9</option>
+          <option>13</option>
+          <option>17</option>
         </select>
       </div>
     </div>
