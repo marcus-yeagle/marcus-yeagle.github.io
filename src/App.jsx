@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const UlamSpiral = () => {
+  const [spiralType, setSpiralType] = useState('Twin Prime');
   const [spiral, setSpiral] = useState([[]]);
 
   useEffect(() => {
@@ -72,36 +73,65 @@ const UlamSpiral = () => {
     return num > 1;
   };
 
+  const dispatchSpiralType = (val) => {
+    if (spiralType === 'Prime') {
+      return isPrime(val);
+    }
+
+    if (spiralType === 'Twin Prime') {
+      return (
+        (isPrime(val) && isPrime(val + 2)) || (isPrime(val) && isPrime(val - 2))
+      );
+    }
+
+    if (spiralType === 'Even') {
+      return val % 2 === 0;
+    }
+
+    if (spiralType === 'Odd') {
+      return val % 2 !== 0;
+    }
+  };
+
   return (
-    <div>
-      {spiral.map((vrow) => (
-        <div key={vrow} style={{ display: 'flex' }}>
-          {vrow.map((v) => (
-            <div
-              key={v}
-              style={{
-                border: '2px solid #000',
-                height: 20,
-                width: 20,
-                textAlign: 'center',
-                fontSize: '11px',
-                backgroundColor:
-                  (isPrime(v) && isPrime(v + 2)) ||
-                  (isPrime(v) && isPrime(v - 2))
-                    ? 'blue'
-                    : 'white',
-                color:
-                  (isPrime(v) && isPrime(v + 2)) ||
-                  (isPrime(v) && isPrime(v - 2))
-                    ? 'white'
-                    : 'black',
-              }}
-            >
-              {v}
-            </div>
-          ))}
-        </div>
-      ))}
+    <div style={{ display: 'flex' }}>
+      <div>
+        {spiral.map((vrow) => (
+          <div key={vrow} style={{ display: 'flex' }}>
+            {vrow.map((v) => (
+              <div
+                key={v}
+                style={{
+                  border: '2px solid #000',
+                  height: 20,
+                  width: 20,
+                  textAlign: 'center',
+                  fontSize: '11px',
+                  backgroundColor: dispatchSpiralType(v) ? 'blue' : 'white',
+                  color: dispatchSpiralType(v) ? 'white' : 'black',
+                }}
+              >
+                {v}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <select
+          defaultValue={'Twin Prime'}
+          onChange={(e) => {
+            setSpiralType(e.target.value);
+            console.log(e.target.value);
+          }}
+        >
+          <option>Even</option>
+          <option>Odd</option>
+          <option>Prime</option>
+          <option>Twin Prime</option>
+        </select>
+      </div>
     </div>
   );
 };
