@@ -6,7 +6,7 @@ const UlamSpiral = () => {
   const [spiral, setSpiral] = useState([[]]);
 
   useEffect(() => {
-    const f = 8;
+    const f = 2;
     const wh = [
       Math.floor(window.innerWidth / f),
       Math.floor(window.innerHeight / f),
@@ -112,9 +112,9 @@ const UlamSpiral = () => {
               <div
                 key={v}
                 style={{
-                  border: '1px dashed #D3D3D3',
-                  height: 5,
-                  width: 5,
+                  // border: '1px solid #D3D3D3',
+                  height: 2,
+                  width: 2,
                   textAlign: 'center',
                   fontSize: '11px',
                   backgroundColor: dispatchSpiralType(v) ? 'blue' : '#f8f5d7',
@@ -126,35 +126,40 @@ const UlamSpiral = () => {
         ))}
       </div>
 
-      <div>
-        <select
-          defaultValue={'Prime'}
-          onChange={(e) => {
-            setSpiralType(e.target.value);
-          }}
-        >
-          <option>Off</option>
-          <option>Even</option>
-          <option>Odd</option>
-          <option>Div By</option>
-          <option>Prime</option>
-          <option>Twin Prime</option>
-        </select>
-      </div>
-      <div style={{ display: spiralType !== 'Div By' ? 'none' : 'block' }}>
-        <select
-          defaultValue={3}
-          onChange={(e) => {
-            setDivByVal(e.target.value);
-            console.log(e.target.value);
-          }}
-        >
-          <option>3</option>
-          <option>7</option>
-          <option>9</option>
-          <option>13</option>
-          <option>17</option>
-        </select>
+      <div
+        style={{ display: 'flex', flexDirection: 'column', padding: '0.5rem' }}
+      >
+        <div>
+          <select
+            defaultValue={'Prime'}
+            onChange={(e) => {
+              setSpiralType(e.target.value);
+            }}
+          >
+            <option>Off</option>
+            <option>Even</option>
+            <option>Odd</option>
+            <option>Div By</option>
+            <option>Prime</option>
+            <option>Twin Prime</option>
+          </select>
+        </div>
+        <div style={{ display: spiralType !== 'Div By' ? 'none' : 'block' }}>
+          <select
+            defaultValue={3}
+            onChange={(e) => {
+              setDivByVal(e.target.value);
+              console.log(e.target.value);
+            }}
+          >
+            <option>3</option>
+            <option>7</option>
+            <option>9</option>
+            <option>13</option>
+            <option>17</option>
+            <option>19</option>
+          </select>
+        </div>
       </div>
     </div>
   );
