@@ -1,5 +1,9 @@
 import React from 'react';
 import { Routes, Route, Link, Outlet } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const UlamSpiral = React.lazy(() => import('./components/UlamSpiral'));
 const Art = React.lazy(() => import('./components/FPArt'));
@@ -8,7 +12,7 @@ const SayState = React.lazy(() => import('./components/SayState'));
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route
           path="art"
@@ -40,28 +44,43 @@ export default function App() {
   );
 }
 
-function Layout() {
+function Navigation() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/art">FP Art</Link>
-          </li>
-          <li>
-            <Link to="/ulam">Ulam Spiral</Link>
-          </li>
-          <li>
-            <Link to="/say-a-state">Say-a-State</Link>
-          </li>
-        </ul>
-      </nav>
+    <div style={{ width: '100%' }}>
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#">Marcus Yeagle</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#">
+                <Link style={undefined} to="/art">
+                  FP Art
+                </Link>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <Link style={undefined} to="/ulam">
+                  Ulam Spiral
+                </Link>
+              </Nav.Link>
+              <Nav.Link href="#">
+                <Link style={undefined} to="/say-a-state">
+                  Say-a-State
+                </Link>
+              </Nav.Link>
 
+              <NavDropdown title="Contact" id="collapsible-nav-dropdown">
+                <NavDropdown.Item href="#email">Email</NavDropdown.Item>
+                <NavDropdown.Item href="#instagram">Instagram</NavDropdown.Item>
+                <NavDropdown.Item href="#linkedIn">LinkedIn</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#github">GitHub</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <hr />
-
       <Outlet />
     </div>
   );
