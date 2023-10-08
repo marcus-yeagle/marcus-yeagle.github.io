@@ -68,13 +68,31 @@ function Navigation() {
                   Say-a-State
                 </Link>
               </Nav.Link>
-
+            </Nav>
+            <Nav>
               <NavDropdown title="Contact" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#email">Email</NavDropdown.Item>
-                <NavDropdown.Item href="#instagram">Instagram</NavDropdown.Item>
-                <NavDropdown.Item href="#linkedIn">LinkedIn</NavDropdown.Item>
+                <NavDropdown.Item
+                  target="blank"
+                  href="https://www.instagram.com/marcus.yeagle/"
+                >
+                  Instagram
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  target="blank"
+                  href="https://www.linkedin.com/in/marcusyeagle/"
+                >
+                  LinkedIn
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  target="blank"
+                  href="https://github.com/marcus-yeagle"
+                >
+                  GitHub
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#github">GitHub</NavDropdown.Item>
+                <NavDropdown.Item href="mailto:marcus.yeagle@gmail.com">
+                  Email
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
