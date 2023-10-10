@@ -70,3 +70,14 @@ button:focus-visible {
 .tab-container {
   min-height: 80vh;
 }
+
+.land {
+  fill: #fff;
+  fill-opacity: 1;
+  stroke:#000;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
+.active {
+  fill: aquamarine;
+}

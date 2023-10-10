@@ -66,10 +66,23 @@ const Art = () => {
     );
   }
 
+  function checkerTile(width, height, { colors, colorIndex }) {
+    return [
+      <rect
+        x={0}
+        y={0}
+        width={width}
+        height={height}
+        fill={colors[colorIndex]}
+      />,
+      { colors, colorIndex: (colorIndex + 1) % colors.length },
+    ];
+  }
+
   return (
     <>
-      <div style={{ display: 'flex' }}>
-        <div style={{ width: '50%' }}>
+      <div>
+        <div>
           <svg
             id="art"
             style={{
@@ -77,12 +90,14 @@ const Art = () => {
               padding: '15px',
               backgroundColor: 'white',
             }}
+            width={500}
+            height={500}
             viewBox="0 0 100 100"
           >
             {getPattern('red', 'blue', 100)}
           </svg>
         </div>
-        <div style={{ width: '50%' }}>
+        <div>
           <svg
             id="art"
             style={{
@@ -90,12 +105,32 @@ const Art = () => {
               padding: '15px',
               backgroundColor: 'white',
             }}
+            width={500}
+            height={500}
             viewBox="0 0 100 100"
           >
             {getTiles(100, 100, 5, 5, basicTile, {
               color: 'orange',
               tileIndex: 0,
               label: false, // set to true to check that each tile gets a different tileIndex
+            })}
+          </svg>
+        </div>
+        <div>
+          <svg
+            id="art"
+            style={{
+              border: '10px solid black',
+              padding: '30px',
+              backgroundColor: 'white',
+            }}
+            width={500}
+            height={500}
+            viewBox="0 0 100 100"
+          >
+            {getTiles(100, 100, 5, 5, checkerTile, {
+              colors: ['black', 'white'],
+              colorIndex: 0,
             })}
           </svg>
         </div>
