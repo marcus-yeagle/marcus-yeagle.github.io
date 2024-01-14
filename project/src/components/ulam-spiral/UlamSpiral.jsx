@@ -104,7 +104,7 @@ const UlamSpiral = () => {
   };
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div>
         {spiral.map((vrow) => (
           <div key={vrow} style={{ display: 'flex' }}>
