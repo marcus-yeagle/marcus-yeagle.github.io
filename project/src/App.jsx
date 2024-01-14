@@ -5,9 +5,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const UlamSpiral = React.lazy(() => import('./components/UlamSpiral'));
-const Art = React.lazy(() => import('./components/FPArt'));
-const SayState = React.lazy(() => import('./components/SayState'));
+const UlamSpiral = React.lazy(() =>
+  import('./components/ulam-spiral/UlamSpiral')
+);
+const Art = React.lazy(() => import('./components/functional-art/FPArt'));
+const SayState = React.lazy(() => import('./components/say-a-state/SayState'));
 
 export default function App() {
   return (
