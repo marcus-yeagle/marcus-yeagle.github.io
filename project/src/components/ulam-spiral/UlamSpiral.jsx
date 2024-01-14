@@ -104,7 +104,7 @@ const UlamSpiral = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column-reverse' }}>
       <div>
         {spiral.map((vrow) => (
           <div key={vrow} style={{ display: 'flex' }}>
@@ -149,20 +149,18 @@ const UlamSpiral = () => {
           </select>
         </div>
         <div style={{ display: spiralType !== 'Div By' ? 'none' : 'block' }}>
-          <select
+          <input
+            type="number"
+            id="divByNum"
+            name="divByNum"
+            min="3"
+            max="999"
             defaultValue={3}
             onChange={(e) => {
               setDivByVal(e.target.value);
               console.log(e.target.value);
             }}
-          >
-            <option>3</option>
-            <option>7</option>
-            <option>9</option>
-            <option>13</option>
-            <option>17</option>
-            <option>19</option>
-          </select>
+          />
         </div>
       </div>
     </div>
