@@ -76,31 +76,19 @@ const UlamSpiral = () => {
   };
 
   const dispatchSpiralType = (val) => {
-    if (spiralType === 'Prime') {
-      return isPrime(val);
-    }
-
-    if (spiralType === 'Twin Prime') {
-      return (
-        (isPrime(val) && isPrime(val + 2)) || (isPrime(val) && isPrime(val - 2))
-      );
-    }
-
-    if (spiralType === 'Even') {
-      return val % 2 === 0;
-    }
-
-    if (spiralType === 'Odd') {
-      return val % 2 !== 0;
-    }
-
-    if (spiralType === 'Div By') {
-      return val % divByVal === 0;
-    }
-
-    if (spiralType === 'Off') {
-      return false;
-    }
+    return spiralType === 'Prime'
+      ? isPrime(val)
+      : spiralType === 'Twin Prime'
+      ? (isPrime(val) && isPrime(val + 2)) || (isPrime(val) && isPrime(val - 2))
+      : spiralType === 'Even'
+      ? val % 2 === 0
+      : spiralType === 'Odd'
+      ? al % 2 !== 0
+      : spiralType === 'Div By'
+      ? val % divByVal === 0
+      : spiralType === 'Off'
+      ? false
+      : true;
   };
 
   return (
@@ -129,7 +117,7 @@ const UlamSpiral = () => {
       <div
         style={{
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: 'row',
           padding: '0.5rem',
         }}
       >
@@ -153,12 +141,9 @@ const UlamSpiral = () => {
             type="number"
             id="divByNum"
             name="divByNum"
-            min="3"
-            max="999"
-            defaultValue={3}
+            value={divByVal}
             onChange={(e) => {
               setDivByVal(e.target.value);
-              console.log(e.target.value);
             }}
           />
         </div>
