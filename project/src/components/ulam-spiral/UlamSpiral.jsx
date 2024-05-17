@@ -13,20 +13,20 @@ const UlamSpiral = () => {
     ];
     setSpiral(generateUlamSpiral(wh[0] > wh[1] ? wh[1] : wh[0]));
 
-    // window.addEventListener('resize', () => {
-    //   const newWindowSize = [
-    //     Math.floor(window.innerWidth / f),
-    //     Math.floor(window.innerHeight / f),
-    //   ];
-    //   setSpiral(
-    //     generateUlamSpiral(
-    //       newWindowSize[0] > newWindowSize[1]
-    //         ? newWindowSize[1]
-    //         : newWindowSize[0]
-    //     )
-    //   );
-    // });
-  }, []);
+    window.addEventListener('resize', () => {
+      const newWindowSize = [
+        Math.floor(window.innerWidth / f),
+        Math.floor(window.innerHeight / f),
+      ];
+      setSpiral(
+        generateUlamSpiral(
+          newWindowSize[0] > newWindowSize[1]
+            ? newWindowSize[1]
+            : newWindowSize[0]
+        )
+      );
+    });
+  }, [spiralType]);
 
   function generateUlamSpiral(size) {
     if (size <= 0) {
