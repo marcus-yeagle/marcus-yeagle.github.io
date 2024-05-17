@@ -2915,7 +2915,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
     ${({scanLines:e,scanLinesIntensity:t})=>e&&ie`
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
