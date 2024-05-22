@@ -2517,7 +2517,7 @@ input[type="number"] {
     font-style: normal
   }
   html {
-    font-size: ${({fontSize:e})=>`${e*14}px`};
+    font-size: ${({fontSize:e})=>`${e*16}px`};
   }
   html, body, #root {
     height: 100%;
